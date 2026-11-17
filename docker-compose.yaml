@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  # 1. Baza danych udająca rozproszone systemy miasta (ZTM i MPU)
+  miasto_db:
+    image: postgres:15
+    container_name: poz_data_postgres
+    environment:
+      POSTGRES_USER: urzednik
+      POSTGRES_PASSWORD: haslo123
+      POSTGRES_DB: poz_data
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  # 2. Narzędzie analityczne i wizualizacyjne (odpowiednik docelowych dashboardów)
+  metabase:
+    image: metabase/metabase:latest
+    container_name: poz_data_metabase
+    ports:
+      - "3000:3000"
+    depends_on:
+      - miasto_db
+
+volumes:
+  pgdata:

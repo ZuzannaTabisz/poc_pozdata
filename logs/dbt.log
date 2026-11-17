@@ -1,0 +1,598 @@
+[0m12:22:29.359398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F8A173FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F86DB5C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F8BBE2CF0>]}
+
+
+============================== 12:22:29.359398 | 8ea35ada-09d9-4c21-aef2-ac98ddcc4290 ==============================
+[0m12:22:29.359398 [info ] [MainThread]: Running with dbt=1.12.7
+[0m12:22:29.359398 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m12:22:29.395572 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\ZUZTAB\Desktop\PoC-POZDATA\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:22:29.398423 [debug] [MainThread]: Command `dbt run` failed at 12:22:29.398423 after 0.38 seconds
+[0m12:22:29.398423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F8BCEF9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F87A4E6F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F8BC0D400>]}
+[0m12:22:29.401899 [debug] [MainThread]: Flushing usage events
+[0m12:22:30.301290 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:27:10.709765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31835EE70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C315726270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31A6E7110>]}
+
+
+============================== 12:27:10.716371 | 33534361-7924-4d57-aa98-11036c8fe304 ==============================
+[0m12:27:10.716371 [info ] [MainThread]: Running with dbt=1.12.7
+[0m12:27:10.716371 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'invocation_command': 'dbt run --profiles-dir .', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\ZUZTAB\\Desktop\\PoC-POZDATA\\logs'}
+[0m12:27:11.435068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '33534361-7924-4d57-aa98-11036c8fe304', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31840B4D0>]}
+[0m12:27:11.655956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '33534361-7924-4d57-aa98-11036c8fe304', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31AA2FB00>]}
+[0m12:27:11.655956 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m12:27:11.895788 [debug] [MainThread]: checksum: be87b256612b8be711dd1bb332bf269e9caf7f557519dd0bdf662854add8e380, vars: {}, profile: poz_data_platform, target: dev, version: 1.12.7
+[0m12:27:11.897805 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:27:11.897805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '33534361-7924-4d57-aa98-11036c8fe304', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31AB18CE0>]}
+[0m12:27:14.233093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '33534361-7924-4d57-aa98-11036c8fe304', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31B49F170>]}
+[0m12:27:14.332430 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\manifest.json
+[0m12:27:14.345987 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\semantic_manifest.json
+[0m12:27:14.385688 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\osi_document.json
+[0m12:27:14.417565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '33534361-7924-4d57-aa98-11036c8fe304', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31C5A6660>]}
+[0m12:27:14.417565 [info ] [MainThread]: Found 1 model, 2 data tests, 512 macros
+[0m12:27:14.417565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '33534361-7924-4d57-aa98-11036c8fe304', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31C514650>]}
+[0m12:27:14.417565 [info ] [MainThread]: 
+[0m12:27:14.417565 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:27:14.417565 [info ] [MainThread]: 
+[0m12:27:14.417565 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:27:14.417565 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_poz_data'
+[0m12:27:14.531224 [debug] [ThreadPool]: Using duckdb connection "list_poz_data"
+[0m12:27:14.531224 [debug] [ThreadPool]: On list_poz_data: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "connection_name": "list_poz_data"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"poz_data"'
+    
+  
+  
+[0m12:27:14.531224 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:27:14.562897 [debug] [ThreadPool]: SQL status: OK in 0.039 seconds
+[0m12:27:14.578750 [debug] [ThreadPool]: On list_poz_data: Close
+[0m12:27:14.578750 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_poz_data, now create_poz_data_main)
+[0m12:27:14.578750 [debug] [ThreadPool]: Creating schema "database: "poz_data"
+schema: "main"
+"
+[0m12:27:14.578750 [debug] [ThreadPool]: Using duckdb connection "create_poz_data_main"
+[0m12:27:14.578750 [debug] [ThreadPool]: On create_poz_data_main: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "connection_name": "create_poz_data_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='poz_data'
+        and type != 'duckdb'
+    
+  
+[0m12:27:14.578750 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:27:14.578750 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:27:14.578750 [debug] [ThreadPool]: Using duckdb connection "create_poz_data_main"
+[0m12:27:14.578750 [debug] [ThreadPool]: On create_poz_data_main: BEGIN
+[0m12:27:14.578750 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:27:14.578750 [debug] [ThreadPool]: Using duckdb connection "create_poz_data_main"
+[0m12:27:14.578750 [debug] [ThreadPool]: On create_poz_data_main: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "connection_name": "create_poz_data_main"} */
+
+    
+    
+        create schema if not exists "poz_data"."main"
+    
+[0m12:27:14.578750 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:27:14.578750 [debug] [ThreadPool]: On create_poz_data_main: COMMIT
+[0m12:27:14.578750 [debug] [ThreadPool]: Using duckdb connection "create_poz_data_main"
+[0m12:27:14.578750 [debug] [ThreadPool]: On create_poz_data_main: COMMIT
+[0m12:27:14.578750 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:27:14.578750 [debug] [ThreadPool]: On create_poz_data_main: Close
+[0m12:27:14.594545 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_poz_data_main'
+[0m12:27:14.594545 [debug] [ThreadPool]: Using duckdb connection "list_poz_data_main"
+[0m12:27:14.594545 [debug] [ThreadPool]: On list_poz_data_main: BEGIN
+[0m12:27:14.594545 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:27:14.594545 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:27:14.594545 [debug] [ThreadPool]: Using duckdb connection "list_poz_data_main"
+[0m12:27:14.594545 [debug] [ThreadPool]: On list_poz_data_main: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "connection_name": "list_poz_data_main"} */
+select
+      'poz_data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'poz_data'
+  
+[0m12:27:14.615536 [debug] [ThreadPool]: SQL status: OK in 0.014 seconds
+[0m12:27:14.615536 [debug] [ThreadPool]: On list_poz_data_main: ROLLBACK
+[0m12:27:14.615536 [debug] [ThreadPool]: On list_poz_data_main: Close
+[0m12:27:14.615536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '33534361-7924-4d57-aa98-11036c8fe304', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31C5154C0>]}
+[0m12:27:14.615536 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:27:14.615536 [debug] [MainThread]: On master: BEGIN
+[0m12:27:14.615536 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:27:14.615536 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:27:14.615536 [debug] [MainThread]: On master: COMMIT
+[0m12:27:14.615536 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:27:14.615536 [debug] [MainThread]: On master: COMMIT
+[0m12:27:14.626206 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:27:14.626206 [debug] [MainThread]: On master: Close
+[0m12:27:14.659666 [debug] [Thread-1 (]: Began running node model.poz_data_platform.stg_ztm
+[0m12:27:14.659666 [info ] [Thread-1 (]: 1 of 1 START sql table model main.stg_ztm ...................................... [RUN]
+[0m12:27:14.659666 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.poz_data_platform.stg_ztm'
+[0m12:27:14.667599 [debug] [Thread-1 (]: Began compiling node model.poz_data_platform.stg_ztm
+[0m12:27:14.669373 [debug] [Thread-1 (]: Writing injected SQL for node "model.poz_data_platform.stg_ztm"
+[0m12:27:14.671378 [debug] [Thread-1 (]: Began executing node model.poz_data_platform.stg_ztm
+[0m12:27:14.674891 [debug] [Thread-1 (]: Using duckdb connection "model.poz_data_platform.stg_ztm"
+[0m12:27:14.674891 [debug] [Thread-1 (]: On model.poz_data_platform.stg_ztm: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "node_id": "model.poz_data_platform.stg_ztm"} */
+select database_name, type from duckdb_databases()
+[0m12:27:14.674891 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:27:14.677595 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m12:27:14.677595 [debug] [Thread-1 (]: Using duckdb connection "model.poz_data_platform.stg_ztm"
+[0m12:27:14.677595 [debug] [Thread-1 (]: On model.poz_data_platform.stg_ztm: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "node_id": "model.poz_data_platform.stg_ztm"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('poz_data')
+                      and lower(schema_name) = lower('main')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m12:27:14.681731 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m12:27:14.749708 [debug] [Thread-1 (]: Writing runtime sql for node "model.poz_data_platform.stg_ztm"
+[0m12:27:14.752597 [debug] [Thread-1 (]: Using duckdb connection "model.poz_data_platform.stg_ztm"
+[0m12:27:14.754603 [debug] [Thread-1 (]: On model.poz_data_platform.stg_ztm: BEGIN
+[0m12:27:14.755609 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:27:14.755609 [debug] [Thread-1 (]: Using duckdb connection "model.poz_data_platform.stg_ztm"
+[0m12:27:14.755609 [debug] [Thread-1 (]: On model.poz_data_platform.stg_ztm: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "node_id": "model.poz_data_platform.stg_ztm"} */
+
+    
+
+    create  table
+      "poz_data"."main"."stg_ztm__dbt_tmp"
+  
+    
+    as (
+      SELECT
+    UPPER(TRIM(linia_autobusu)) AS linia,
+    TRY_CAST(liczba_pasazerow_z_czujnika AS INTEGER) AS liczba_pasazerow
+FROM read_csv_auto('ztm_stary_system.csv')
+WHERE TRY_CAST(liczba_pasazerow_z_czujnika AS INTEGER) > 0
+    );
+    
+  
+[0m12:27:14.766083 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m12:27:14.774873 [debug] [Thread-1 (]: Using duckdb connection "model.poz_data_platform.stg_ztm"
+[0m12:27:14.774873 [debug] [Thread-1 (]: On model.poz_data_platform.stg_ztm: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "node_id": "model.poz_data_platform.stg_ztm"} */
+alter table "poz_data"."main"."stg_ztm__dbt_tmp" rename to "stg_ztm"
+[0m12:27:14.776649 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:27:14.791528 [debug] [Thread-1 (]: On model.poz_data_platform.stg_ztm: COMMIT
+[0m12:27:14.791528 [debug] [Thread-1 (]: Using duckdb connection "model.poz_data_platform.stg_ztm"
+[0m12:27:14.791528 [debug] [Thread-1 (]: On model.poz_data_platform.stg_ztm: COMMIT
+[0m12:27:14.821801 [debug] [Thread-1 (]: SQL status: OK in 0.028 seconds
+[0m12:27:14.834371 [debug] [Thread-1 (]: Using duckdb connection "model.poz_data_platform.stg_ztm"
+[0m12:27:14.836148 [debug] [Thread-1 (]: On model.poz_data_platform.stg_ztm: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "node_id": "model.poz_data_platform.stg_ztm"} */
+
+      drop table if exists "poz_data"."main"."stg_ztm__dbt_backup" cascade
+    
+[0m12:27:14.836148 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:27:14.841388 [debug] [Thread-1 (]: On model.poz_data_platform.stg_ztm: Close
+[0m12:27:14.843569 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '33534361-7924-4d57-aa98-11036c8fe304', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31C5B9D60>]}
+[0m12:27:14.844580 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.stg_ztm ................................. [[32mOK[0m in 0.18s]
+[0m12:27:14.844580 [debug] [Thread-1 (]: Finished running node model.poz_data_platform.stg_ztm
+[0m12:27:14.848600 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:27:14.848600 [debug] [MainThread]: On master: BEGIN
+[0m12:27:14.850612 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:27:14.851167 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:27:14.852132 [debug] [MainThread]: On master: COMMIT
+[0m12:27:14.852132 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:27:14.852132 [debug] [MainThread]: On master: COMMIT
+[0m12:27:14.852132 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:27:14.852132 [debug] [MainThread]: On master: Close
+[0m12:27:14.856309 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:27:14.857828 [debug] [MainThread]: Connection 'create_poz_data_main' was properly closed.
+[0m12:27:14.857828 [debug] [MainThread]: Connection 'list_poz_data_main' was properly closed.
+[0m12:27:14.857828 [debug] [MainThread]: Connection 'model.poz_data_platform.stg_ztm' was properly closed.
+[0m12:27:14.860095 [info ] [MainThread]: 
+[0m12:27:14.860095 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.44 seconds (0.44s).
+[0m12:27:14.860095 [debug] [MainThread]: Command end result
+[0m12:27:15.057385 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\manifest.json
+[0m12:27:15.062605 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\semantic_manifest.json
+[0m12:27:15.066626 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\osi_document.json
+[0m12:27:15.098831 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\run_results.json
+[0m12:27:15.098831 [info ] [MainThread]: 
+[0m12:27:15.100835 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:27:15.100835 [info ] [MainThread]: 
+[0m12:27:15.100835 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m12:27:15.100835 [debug] [MainThread]: Command `dbt run` succeeded at 12:27:15.100835 after 4.72 seconds
+[0m12:27:15.100835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31B44E330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31C913860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C31C97E810>]}
+[0m12:27:15.100835 [debug] [MainThread]: Flushing usage events
+[0m12:27:15.804313 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:27:54.449519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BCEFB5C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BCE2CC590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BCE2CC980>]}
+
+
+============================== 12:27:54.449519 | 27b0eb72-077a-4fad-a5f7-d0572d74c017 ==============================
+[0m12:27:54.449519 [info ] [MainThread]: Running with dbt=1.12.7
+[0m12:27:54.449519 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --profiles-dir .', 'log_path': 'C:\\Users\\ZUZTAB\\Desktop\\PoC-POZDATA\\logs'}
+[0m12:27:55.160898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '27b0eb72-077a-4fad-a5f7-d0572d74c017', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BCF0D8C20>]}
+[0m12:27:55.406455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '27b0eb72-077a-4fad-a5f7-d0572d74c017', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BD103B020>]}
+[0m12:27:55.414164 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m12:27:55.660564 [debug] [MainThread]: checksum: be87b256612b8be711dd1bb332bf269e9caf7f557519dd0bdf662854add8e380, vars: {}, profile: poz_data_platform, target: dev, version: 1.12.7
+[0m12:27:55.859254 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:27:55.861259 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:27:55.861259 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:27:55.873288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '27b0eb72-077a-4fad-a5f7-d0572d74c017', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BD0DA77D0>]}
+[0m12:27:56.112426 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\manifest.json
+[0m12:27:56.112426 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\semantic_manifest.json
+[0m12:27:56.156720 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\osi_document.json
+[0m12:27:56.200940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '27b0eb72-077a-4fad-a5f7-d0572d74c017', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BD1176C60>]}
+[0m12:27:56.200940 [info ] [MainThread]: Found 1 model, 2 data tests, 512 macros
+[0m12:27:56.205246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '27b0eb72-077a-4fad-a5f7-d0572d74c017', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BD1426ED0>]}
+[0m12:27:56.205807 [info ] [MainThread]: 
+[0m12:27:56.205807 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:27:56.205807 [info ] [MainThread]: 
+[0m12:27:56.205807 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:27:56.211390 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_poz_data_main'
+[0m12:27:56.330778 [debug] [ThreadPool]: Using duckdb connection "list_poz_data_main"
+[0m12:27:56.330778 [debug] [ThreadPool]: On list_poz_data_main: BEGIN
+[0m12:27:56.330778 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:27:56.356926 [debug] [ThreadPool]: SQL status: OK in 0.032 seconds
+[0m12:27:56.356926 [debug] [ThreadPool]: Using duckdb connection "list_poz_data_main"
+[0m12:27:56.356926 [debug] [ThreadPool]: On list_poz_data_main: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "connection_name": "list_poz_data_main"} */
+select
+      'poz_data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'poz_data'
+  
+[0m12:27:56.372739 [debug] [ThreadPool]: SQL status: OK in 0.014 seconds
+[0m12:27:56.372739 [debug] [ThreadPool]: On list_poz_data_main: ROLLBACK
+[0m12:27:56.372739 [debug] [ThreadPool]: On list_poz_data_main: Close
+[0m12:27:56.372739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '27b0eb72-077a-4fad-a5f7-d0572d74c017', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BD1425DC0>]}
+[0m12:27:56.372739 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:27:56.372739 [debug] [MainThread]: On master: BEGIN
+[0m12:27:56.372739 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:27:56.372739 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:27:56.372739 [debug] [MainThread]: On master: COMMIT
+[0m12:27:56.372739 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:27:56.372739 [debug] [MainThread]: On master: COMMIT
+[0m12:27:56.372739 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:27:56.372739 [debug] [MainThread]: On master: Close
+[0m12:27:56.391580 [debug] [Thread-1 (]: Began running node test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa
+[0m12:27:56.410078 [info ] [Thread-1 (]: 1 of 2 START test not_null_stg_ztm_liczba_pasazerow ............................ [RUN]
+[0m12:27:56.410078 [debug] [Thread-1 (]: Acquiring new duckdb connection 'test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa'
+[0m12:27:56.410078 [debug] [Thread-1 (]: Began compiling node test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa
+[0m12:27:56.431055 [debug] [Thread-1 (]: Writing injected SQL for node "test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa"
+[0m12:27:56.431055 [debug] [Thread-1 (]: Began executing node test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa
+[0m12:27:56.441012 [debug] [Thread-1 (]: Using duckdb connection "test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa"
+[0m12:27:56.441012 [debug] [Thread-1 (]: On test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "node_id": "test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa"} */
+select database_name, type from duckdb_databases()
+[0m12:27:56.441012 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:27:56.441012 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m12:27:56.441012 [debug] [Thread-1 (]: Using duckdb connection "test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa"
+[0m12:27:56.441012 [debug] [Thread-1 (]: On test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "node_id": "test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('poz_data')
+                      and lower(schema_name) = lower('main_dbt_test__audit')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m12:27:56.441012 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:27:56.464202 [debug] [Thread-1 (]: Writing runtime sql for node "test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa"
+[0m12:27:56.464202 [debug] [Thread-1 (]: Using duckdb connection "test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa"
+[0m12:27:56.464202 [debug] [Thread-1 (]: On test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa: BEGIN
+[0m12:27:56.464202 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:27:56.464202 [debug] [Thread-1 (]: Using duckdb connection "test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa"
+[0m12:27:56.464202 [debug] [Thread-1 (]: On test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "node_id": "test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select liczba_pasazerow
+from "poz_data"."main"."stg_ztm"
+where liczba_pasazerow is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:27:56.464202 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:27:56.473425 [debug] [Thread-1 (]: On test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa: ROLLBACK
+[0m12:27:56.473425 [debug] [Thread-1 (]: On test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa: Close
+[0m12:27:56.473425 [info ] [Thread-1 (]: 1 of 2 PASS not_null_stg_ztm_liczba_pasazerow .................................. [[32mPASS[0m in 0.06s]
+[0m12:27:56.473425 [debug] [Thread-1 (]: Finished running node test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa
+[0m12:27:56.473425 [debug] [Thread-1 (]: Began running node test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d
+[0m12:27:56.473425 [info ] [Thread-1 (]: 2 of 2 START test not_null_stg_ztm_linia ....................................... [RUN]
+[0m12:27:56.473425 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa, now test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d)
+[0m12:27:56.473425 [debug] [Thread-1 (]: Began compiling node test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d
+[0m12:27:56.480650 [debug] [Thread-1 (]: Writing injected SQL for node "test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d"
+[0m12:27:56.480650 [debug] [Thread-1 (]: Began executing node test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d
+[0m12:27:56.480650 [debug] [Thread-1 (]: Writing runtime sql for node "test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d"
+[0m12:27:56.480650 [debug] [Thread-1 (]: Using duckdb connection "test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d"
+[0m12:27:56.480650 [debug] [Thread-1 (]: On test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d: BEGIN
+[0m12:27:56.488774 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:27:56.488774 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:27:56.488774 [debug] [Thread-1 (]: Using duckdb connection "test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d"
+[0m12:27:56.488774 [debug] [Thread-1 (]: On test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "node_id": "test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select linia
+from "poz_data"."main"."stg_ztm"
+where linia is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:27:56.488774 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:27:56.488774 [debug] [Thread-1 (]: On test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d: ROLLBACK
+[0m12:27:56.488774 [debug] [Thread-1 (]: On test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d: Close
+[0m12:27:56.488774 [info ] [Thread-1 (]: 2 of 2 PASS not_null_stg_ztm_linia ............................................. [[32mPASS[0m in 0.02s]
+[0m12:27:56.488774 [debug] [Thread-1 (]: Finished running node test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d
+[0m12:27:56.495886 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:27:56.495886 [debug] [MainThread]: On master: BEGIN
+[0m12:27:56.495886 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:27:56.497111 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:27:56.497111 [debug] [MainThread]: On master: COMMIT
+[0m12:27:56.497563 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:27:56.497916 [debug] [MainThread]: On master: COMMIT
+[0m12:27:56.497916 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:27:56.498580 [debug] [MainThread]: On master: Close
+[0m12:27:56.498952 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:27:56.498952 [debug] [MainThread]: Connection 'list_poz_data_main' was properly closed.
+[0m12:27:56.498952 [debug] [MainThread]: Connection 'test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d' was properly closed.
+[0m12:27:56.498952 [info ] [MainThread]: 
+[0m12:27:56.498952 [info ] [MainThread]: Finished running 2 data tests in 0 hours 0 minutes and 0.29 seconds (0.29s).
+[0m12:27:56.498952 [debug] [MainThread]: Command end result
+[0m12:27:56.525340 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\manifest.json
+[0m12:27:56.525340 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\semantic_manifest.json
+[0m12:27:56.531192 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\osi_document.json
+[0m12:27:56.564323 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\run_results.json
+[0m12:27:56.564323 [info ] [MainThread]: 
+[0m12:27:56.564323 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:27:56.564323 [info ] [MainThread]: 
+[0m12:27:56.564323 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m12:27:56.564323 [debug] [MainThread]: Command `dbt test` succeeded at 12:27:56.564323 after 2.47 seconds
+[0m12:27:56.564323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BCEF3DDF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BD12F51F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BD0B07800>]}
+[0m12:27:56.564323 [debug] [MainThread]: Flushing usage events
+[0m12:27:57.182635 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:28:11.245377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024150D59310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024155233230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241529B3140>]}
+
+
+============================== 12:28:11.245377 | 75592be1-6a7a-46ca-9672-e3095e4ecd4a ==============================
+[0m12:28:11.245377 [info ] [MainThread]: Running with dbt=1.12.7
+[0m12:28:11.245377 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt docs generate --profiles-dir .', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\ZUZTAB\\Desktop\\PoC-POZDATA\\logs'}
+[0m12:28:11.919316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '75592be1-6a7a-46ca-9672-e3095e4ecd4a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002415591BD40>]}
+[0m12:28:12.121419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '75592be1-6a7a-46ca-9672-e3095e4ecd4a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002415384B260>]}
+[0m12:28:12.135707 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m12:28:12.389014 [debug] [MainThread]: checksum: be87b256612b8be711dd1bb332bf269e9caf7f557519dd0bdf662854add8e380, vars: {}, profile: poz_data_platform, target: dev, version: 1.12.7
+[0m12:28:12.580540 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:28:12.580540 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:28:12.580540 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:28:12.596332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '75592be1-6a7a-46ca-9672-e3095e4ecd4a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024155AA7740>]}
+[0m12:28:12.692365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '75592be1-6a7a-46ca-9672-e3095e4ecd4a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024155DBDC10>]}
+[0m12:28:12.692365 [info ] [MainThread]: Found 1 model, 2 data tests, 512 macros
+[0m12:28:12.692365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '75592be1-6a7a-46ca-9672-e3095e4ecd4a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024155DD5B20>]}
+[0m12:28:12.692365 [info ] [MainThread]: 
+[0m12:28:12.692365 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:28:12.692365 [info ] [MainThread]: 
+[0m12:28:12.692365 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:28:12.708135 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_poz_data_main'
+[0m12:28:12.796891 [debug] [ThreadPool]: Using duckdb connection "list_poz_data_main"
+[0m12:28:12.796891 [debug] [ThreadPool]: On list_poz_data_main: BEGIN
+[0m12:28:12.796891 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:28:12.828435 [debug] [ThreadPool]: SQL status: OK in 0.027 seconds
+[0m12:28:12.828435 [debug] [ThreadPool]: Using duckdb connection "list_poz_data_main"
+[0m12:28:12.828435 [debug] [ThreadPool]: On list_poz_data_main: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "connection_name": "list_poz_data_main"} */
+select
+      'poz_data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'poz_data'
+  
+[0m12:28:12.844362 [debug] [ThreadPool]: SQL status: OK in 0.014 seconds
+[0m12:28:12.844362 [debug] [ThreadPool]: On list_poz_data_main: ROLLBACK
+[0m12:28:12.844362 [debug] [ThreadPool]: On list_poz_data_main: Close
+[0m12:28:12.844362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '75592be1-6a7a-46ca-9672-e3095e4ecd4a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024155DBDFA0>]}
+[0m12:28:12.844362 [debug] [Thread-1 (]: Began running node model.poz_data_platform.stg_ztm
+[0m12:28:12.844362 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.poz_data_platform.stg_ztm'
+[0m12:28:12.844362 [debug] [Thread-1 (]: Began compiling node model.poz_data_platform.stg_ztm
+[0m12:28:12.844362 [debug] [Thread-1 (]: Writing injected SQL for node "model.poz_data_platform.stg_ztm"
+[0m12:28:12.844362 [debug] [Thread-1 (]: Began executing node model.poz_data_platform.stg_ztm
+[0m12:28:12.844362 [debug] [Thread-1 (]: Finished running node model.poz_data_platform.stg_ztm
+[0m12:28:12.844362 [debug] [Thread-1 (]: Began running node test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa
+[0m12:28:12.860277 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.poz_data_platform.stg_ztm, now test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa)
+[0m12:28:12.860277 [debug] [Thread-1 (]: Began compiling node test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa
+[0m12:28:12.860277 [debug] [Thread-1 (]: Writing injected SQL for node "test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa"
+[0m12:28:12.860277 [debug] [Thread-1 (]: Began executing node test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa
+[0m12:28:12.860277 [debug] [Thread-1 (]: Finished running node test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa
+[0m12:28:12.860277 [debug] [Thread-1 (]: Began running node test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d
+[0m12:28:12.876147 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa, now test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d)
+[0m12:28:12.876147 [debug] [Thread-1 (]: Began compiling node test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d
+[0m12:28:12.879939 [debug] [Thread-1 (]: Writing injected SQL for node "test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d"
+[0m12:28:12.879939 [debug] [Thread-1 (]: Began executing node test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d
+[0m12:28:12.879939 [debug] [Thread-1 (]: Finished running node test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d
+[0m12:28:12.879939 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:28:12.879939 [debug] [MainThread]: Connection 'list_poz_data_main' was properly closed.
+[0m12:28:12.879939 [debug] [MainThread]: Connection 'test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d' was properly closed.
+[0m12:28:12.879939 [debug] [MainThread]: Command end result
+[0m12:28:12.940488 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\manifest.json
+[0m12:28:12.955797 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\semantic_manifest.json
+[0m12:28:12.979971 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\osi_document.json
+[0m12:28:12.995933 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\run_results.json
+[0m12:28:13.011755 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m12:28:13.011755 [info ] [MainThread]: Building catalog
+[0m12:28:13.011755 [debug] [ThreadPool]: Acquiring new duckdb connection 'poz_data.information_schema'
+[0m12:28:13.040483 [debug] [ThreadPool]: Using duckdb connection "poz_data.information_schema"
+[0m12:28:13.040483 [debug] [ThreadPool]: On poz_data.information_schema: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "poz_data_platform", "target_name": "dev", "connection_name": "poz_data.information_schema"} */
+
+    
+    with tables as (
+      select *
+    from (
+        select
+            t.database_name as table_database,
+            t.schema_name as table_schema,
+            t.table_name as table_name,
+            'BASE TABLE' as table_type,
+            t.comment as table_comment
+        from duckdb_tables() t
+        where upper(t.database_name) = upper('poz_data')
+
+        union all
+
+        select
+            v.database_name as table_database,
+            v.schema_name as table_schema,
+            v.view_name as table_name,
+            'VIEW' as table_type,
+            v.comment as table_comment
+        from duckdb_views() v
+        where upper(v.database_name) = upper('poz_data')
+    ) catalog_tables
+      
+        where (
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_ztm')
+                ))
+    
+    ),
+    columns as (
+      select *
+    from (
+        select
+            c.database_name as table_database,
+            c.schema_name as table_schema,
+            c.table_name as table_name,
+            c.column_name as column_name,
+            c.column_index as column_index,
+            c.data_type as column_type,
+            c.comment as column_comment
+        from duckdb_columns() c
+        where upper(c.database_name) = upper('poz_data')
+    ) catalog_columns
+      
+        where (
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_ztm')
+                ))
+    
+    )
+    select
+        tables.table_database,
+        tables.table_schema,
+        tables.table_name,
+        tables.table_type,
+        tables.table_comment,
+        columns.column_name,
+        columns.column_index,
+        columns.column_type,
+        columns.column_comment,
+        null as table_owner
+    from tables
+    join columns using (table_database, table_schema, table_name)
+    order by table_schema, table_name, column_index
+  
+  
+[0m12:28:13.040483 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:28:13.055923 [debug] [ThreadPool]: SQL status: OK in 0.014 seconds
+[0m12:28:13.060839 [debug] [ThreadPool]: On poz_data.information_schema: Close
+[0m12:28:13.072847 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\catalog.json
+[0m12:28:13.093700 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\manifest.json
+[0m12:28:13.093700 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\semantic_manifest.json
+[0m12:28:13.093700 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\osi_document.json
+[0m12:28:13.093700 [info ] [MainThread]: Catalog written to C:\Users\ZUZTAB\Desktop\PoC-POZDATA\target\catalog.json
+[0m12:28:13.093700 [debug] [MainThread]: Command `dbt docs generate` succeeded at 12:28:13.093700 after 2.19 seconds
+[0m12:28:13.093700 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m12:28:13.093700 [debug] [MainThread]: Connection 'poz_data.information_schema' was properly closed.
+[0m12:28:13.093700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024153131E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024155A88C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024156087350>]}
+[0m12:28:13.093700 [debug] [MainThread]: Flushing usage events
+[0m12:28:13.790746 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:28:25.658687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AF0492F60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AF0490E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AF04927B0>]}
+
+
+============================== 12:28:25.663918 | 75a10814-60bc-4b18-8bea-21d0e6446aa2 ==============================
+[0m12:28:25.663918 [info ] [MainThread]: Running with dbt=1.12.7
+[0m12:28:25.663918 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt docs serve --profiles-dir .', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\ZUZTAB\\Desktop\\PoC-POZDATA\\logs'}
+[0m12:28:26.224183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '75a10814-60bc-4b18-8bea-21d0e6446aa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AEDC0C710>]}
+[0m12:28:26.377747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '75a10814-60bc-4b18-8bea-21d0e6446aa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AF02EA660>]}
+[0m12:43:32.911414 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m12:43:32.947368 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\ZUZTAB\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZUZTAB\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\dbt\cli\requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZUZTAB\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\dbt\cli\requires.py", line 295, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZUZTAB\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\dbt\cli\requires.py", line 340, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZUZTAB\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\dbt\cli\requires.py", line 387, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZUZTAB\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\dbt\cli\main.py", line 323, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\ZUZTAB\AppData\Local\Python\pythoncore-3.12-64\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\ZUZTAB\AppData\Local\Python\pythoncore-3.12-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZUZTAB\AppData\Local\Python\pythoncore-3.12-64\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZUZTAB\AppData\Local\Python\pythoncore-3.12-64\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m12:43:32.951397 [debug] [MainThread]: Command `dbt docs serve` failed at 12:43:32.951397 after 907.55 seconds
+[0m12:43:32.953413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AF2017680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AF23D6AE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AF23ADCA0>]}
+[0m12:43:32.953413 [debug] [MainThread]: Flushing usage events
+[0m12:43:33.849135 [debug] [MainThread]: An error was encountered while trying to flush usage events

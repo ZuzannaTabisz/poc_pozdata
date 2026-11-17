@@ -1,0 +1,1 @@
+{"_invocation_id": "75592be1-6a7a-46ca-9672-e3095e4ecd4a", "linked": {"0": {"name": "model.poz_data_platform.stg_ztm", "type": "model", "succ": [1, 2]}, "1": {"name": "test.poz_data_platform.not_null_stg_ztm_linia.af0d209e3d", "type": "test"}, "2": {"name": "test.poz_data_platform.not_null_stg_ztm_liczba_pasazerow.d20315abaa", "type": "test"}}}

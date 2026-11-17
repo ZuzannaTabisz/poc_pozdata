@@ -1,0 +1,6 @@
+poz_data_platform:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: poz_data.duckdb

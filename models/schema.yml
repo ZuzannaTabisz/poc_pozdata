@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_ztm
+    description: "Wyczyszczone dane o potokach pasażerskich z archaicznego systemu ZTM. Usunięto błędy czujników i ustandaryzowano wielkość liter."
+    columns:
+      - name: linia
+        description: "Zunifikowana nazwa linii autobusowej/tramwajowej (np. T-16)."
+        tests:
+          - not_null
+      - name: liczba_pasazerow
+        description: "Liczba pasażerów odczytana z bramek. Tylko wartości dodatnie."
+        tests:
+          - not_null
